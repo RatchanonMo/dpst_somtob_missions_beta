@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 <style>
     body{
-       background-color: #f5f5f7; 
+        background: white;
     }
     *{
         font-family: 'Kanit', sans-serif;
@@ -20,9 +20,13 @@
       color:white;
     }
     .card{
-        border:none;
-        border-radius: 15px;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border: 1px solid #e7e7e9; 
+        border-radius: 12px;
+        transition: 0.2s;
+    }
+    .card:hover{
+        border: 1px solid white;
+        background:#f5f5f7;
     }
     .list-group{
         border-radius: 10px;

@@ -115,7 +115,7 @@ if (mysqli_num_rows($m5) == 1) {
 
                   <p align="center" class="mb-3">
 
-                    <a href="detail.php?id=<?php echo $row['student_id'] ?>" class="btn btn-primary">รายละเอียด</a>
+                    <a href="detail.php?id=<?php echo $row['student_id'] ?>" class="btn btn-outline-secondary">รายละเอียด</a>
                     <a href="<?php echo $row['facebook'] ?>" target="_blank" class="btn btn-outline-primary "><i class="fab fa-facebook-f " style="color:#0d6efd"></i></a>
 
                     <?php if (mysqli_num_rows($m5) == 1) { ?>
@@ -125,12 +125,12 @@ if (mysqli_num_rows($m5) == 1) {
                       $check = mysqli_query($conn, $limit2_check);
 
                       if (mysqli_num_rows($check) == 2) { ?>
-                  <div class="card-footer bg-danger" style="border-radius:0 0 15px 15px">
+                  <div class="card-footer bg-danger" style="border-radius:0 0 12px 12px">
                     <p style="color:white" align="center">ครบโควต้าแล้ว</p>
                   </div>
                   <?php } ?>
                   <?php if(mysqli_num_rows($check) != 2 && $heart == 0 ){ ?>
-                    <div class="card-footer bg-danger" style="border-radius:0 0 15px 15px">
+                    <div class="card-footer bg-danger" style="border-radius:0 0 12px 12px">
                     <p style="color:white" align="center">หัวใจคุณหมดแล้ว</p>
                   </div>
                  

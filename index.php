@@ -15,7 +15,7 @@ session_start();
 <body>
 
 
-    <div class="container-fluid pt-xl-5 pb-xl-5 mt-xl-5" style="max-width: 550px; margin:auto;  border-radius:15px;background:white;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+    <div class="container-fluid pt-5 pb-5 mt-5" style="max-width: 550px; margin:auto;  border-radius:15px;border: 1px solid #e7e7e9; ">
         <form action="./process/login_process.php" method="post" style="max-width:400px; margin:auto">
             <h1 align="center">ลงชื่อเข้าใช้</h1>
             <hr>
@@ -28,7 +28,7 @@ session_start();
                 </div>
             <?php } ?>
             <div class="input-group">
-                <input class="form-control" style="height:50px;background:#f5f5f7" type="text" name="student_id" placeholder="เลขประจำตัวนักเรียน">
+                <input class="form-control" style="height:50px;" type="text" name="student_id" placeholder="เลขประจำตัวนักเรียน">
             </div>
             <div class="input-group mt-3">
                 <button style="height:50px" type="submit" name="submit" class="btn btn-primary form-control">เข้าสู่ระบบ</button>
